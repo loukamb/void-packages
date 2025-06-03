@@ -1,5 +1,5 @@
 pkgname=megasync
-version=5.7.1.0
+version=5.12.0
 revision=1
 arch="x86_64"
 depends="xdg-utils libnotify xz ffmpeg desktop-file-utils qt5-quickcontrols qt5-quickcontrols2 qt5-graphicaleffects"
@@ -7,8 +7,8 @@ short_desc="Automated syncing with MEGA Cloud Drive"
 maintainer="louka <louka.menard.blondin@pm.me>"
 license="custom:Proprietary"
 homepage="https://mega.io"
-checksum="59de57ae5ca429b9d095c2d5a483ef1378eb9177f5b082c2e105f5f24885f706"
-distfiles="https://mega.nz/linux/repo/Debian_12/amd64/megasync_5.7.1-1.1_amd64.deb"
+checksum="5dc072d3a6590581112757791b1ce99ffc5e7a25f4c2b5e9ad6c977f2ee3a43a"
+distfiles="https://mega.nz/linux/repo/Debian_12/amd64/megasync-Debian_12_amd64.deb"
 nostrip=yes
 repository=nonfree
 
