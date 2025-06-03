@@ -1,14 +1,14 @@
 # Template file for 'tzutils'
 pkgname=tzutils
-version=2025a
-revision=1
+version=2025b
+revision=2
 bootstrap=yes
 short_desc="Time zone and daylight-saving time utilities"
 maintainer="Đoàn Trần Công Danh <congdanhqx@gmail.com>"
 license="Public Domain"
 homepage="https://www.iana.org/time-zones"
 distfiles="https://www.iana.org/time-zones/repository/releases/tzdb-${version}.tar.lz"
-checksum=86882399c58693976e0fd291994d2bd8520036c303f68836197a56fb135c2815
+checksum=ec2f98c739009fd81a654efe2ee75069f54bcee5e0d80f510ee7e1f469ed293a
 
 if [ "$CROSS_BUILD" ]; then
 	hostmakedepends="tzutils"
@@ -52,7 +52,7 @@ do_install() {
 
 tzdata_package() {
 	short_desc="Time zone and daylight-saving time data"
-	provides="python3-tzdata-${version}_${revision} py3:tzdata-${version}"
+	provides="python3-tzdata-${version}_${revision} py3:tzdata-${version}_${revision}"
 	pkg_install() {
 		vmove usr/share/man/man5
 		vmove "usr/share/zoneinfo*"

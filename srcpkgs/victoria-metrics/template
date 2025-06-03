@@ -1,6 +1,6 @@
 # Template file for 'victoria-metrics'
 pkgname=victoria-metrics
-version=1.109.1
+version=1.117.1
 revision=1
 build_style=go
 go_import_path="github.com/VictoriaMetrics/VictoriaMetrics"
@@ -22,11 +22,11 @@ license="Apache-2.0"
 homepage="https://victoriametrics.com/"
 changelog="https://docs.victoriametrics.com/changelog/"
 distfiles="https://github.com/VictoriaMetrics/VictoriaMetrics/archive/v${version}.tar.gz"
-checksum=349e2b725d19f847b4039d293408f2b357f3b854a0c66fcd84b5fb9d818d827b
+checksum=879584545c160c3196410ef9f2f0b25a0512b65b2c4fa2940a428ec6c1e21dcf
 
 system_accounts="_vmetrics"
 _vmetrics_homedir="/var/lib/victoria-metrics"
-make_dirs="/var/lib/victoria-metrics 0755 _vmetrics _vmetrics"
+make_dirs="/var/lib/victoria-metrics 0750 _vmetrics _vmetrics"
 
 pre_build() {
 	# dynamically link system zstd

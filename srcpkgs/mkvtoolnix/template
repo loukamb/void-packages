@@ -1,6 +1,6 @@
 # Template file for 'mkvtoolnix'
 pkgname=mkvtoolnix
-version=88.0
+version=92.0
 revision=1
 build_style=gnu-configure
 build_helper="qmake6"
@@ -16,7 +16,7 @@ license="GPL-2.0-only"
 homepage="https://mkvtoolnix.download"
 changelog="https://mkvtoolnix.download/doc/NEWS.md"
 distfiles="https://mkvtoolnix.download/sources/mkvtoolnix-${version}.tar.xz"
-checksum=f2f08c0100740668ef8aba7953fe4aed8c04ee6a5b51717816a4b3d529df0a25
+checksum=657c1aa1c176510e57de12716492ca9d0b59ba5f17ace2f76ffe77c592c88929
 
 if [ "$CROSS_BUILD" ]; then
 	configure_args+=" --with-boost=${XBPS_CROSS_BASE}/usr"

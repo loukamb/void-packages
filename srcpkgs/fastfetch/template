@@ -1,6 +1,6 @@
 # Template file for 'fastfetch'
 pkgname=fastfetch
-version=2.35.0
+version=2.43.0
 revision=1
 build_style=cmake
 configure_args="-DENABLE_SYSTEM_YYJSON=ON -DBUILD_FLASHFETCH=OFF"
@@ -14,7 +14,7 @@ license="MIT"
 homepage="https://github.com/fastfetch-cli/fastfetch"
 changelog="https://github.com/fastfetch-cli/fastfetch/raw/dev/CHANGELOG.md"
 distfiles="https://github.com/fastfetch-cli/fastfetch/archive/refs/tags/${version}.tar.gz"
-checksum=e066d84f9ca176e24f162ce99dab7fac5238b5e8c94ab4aaff5850b6cc5c6ead
+checksum=192ddb57d021436d93ed8ad1fadaaeef20ce59a2296f31af65e12978b48feda5
 
 if [ -n "$XBPS_CHECK_PKGS" ]; then
 	configure_args+=" -DBUILD_TESTS=ON"
